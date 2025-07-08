@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elingap666.github.io/flippy.github.io/sitemap.xml
