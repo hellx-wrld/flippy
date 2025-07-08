@@ -543,6 +543,74 @@
         ::-webkit-scrollbar-thumb:hover {
             background: var(--accent-purple);
         }
+
+        /* Legal pages styling */
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .legal-content h2 {
+            color: var(--accent-blue);
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--glass-border);
+        }
+
+        .legal-content h3 {
+            color: var(--accent-purple);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .legal-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .legal-content strong {
+            color: var(--text-primary);
+        }
+
+        .legal-highlight {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .contact-info {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--glass-border);
+        }
     </style>
 </head>
 <body>
@@ -573,6 +641,12 @@
             </a>
             <a href="#" class="nav-button" onclick="showSection('api')" data-section="api">
                 <i class="fas fa-code"></i> API Docs
+            </a>
+            <a href="#" class="nav-button" onclick="showSection('privacy')" data-section="privacy">
+                <i class="fas fa-shield-alt"></i> Privacy
+            </a>
+            <a href="#" class="nav-button" onclick="showSection('terms')" data-section="terms">
+                <i class="fas fa-file-contract"></i> Terms
             </a>
         </div>
 
@@ -705,9 +779,240 @@
             </div>
         </div>
 
+        <div id="privacy" class="section" style="display:none;">
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="feature-title">Privacy Policy</div>
+                </div>
+                <div class="legal-content">
+                    <div class="legal-highlight">
+                        <strong>Your Privacy Matters:</strong> We are committed to protecting your privacy and being transparent about how we collect, use, and protect your data when using Flippy Flip Bot.
+                    </div>
+
+                    <h2>1. Information We Collect</h2>
+                    <h3>Automatically Collected Data</h3>
+                    <ul>
+                        <li><strong>Discord User ID:</strong> To identify and track your bot usage</li>
+                        <li><strong>Server/Guild Information:</strong> Server ID, member count for analytics</li>
+                        <li><strong>Command Usage:</strong> Commands used, frequency, and timestamps</li>
+                        <li><strong>Game Statistics:</strong> Coins, levels, items, and game progress</li>
+                    </ul>
+
+                    <h3>User-Provided Data</h3>
+                    <ul>
+                        <li><strong>Profile Customization:</strong> Theme preferences, custom colors</li>
+                        <li><strong>Premium Subscriptions:</strong> Payment information (processed by secure third parties)</li>
+                        <li><strong>Support Communications:</strong> Messages sent to our support team</li>
+                    </ul>
+
+                    <h2>2. How We Use Your Information</h2>
+                    <p>We use collected information to:</p>
+                    <ul>
+                        <li>Provide and improve bot functionality</li>
+                        <li>Track game progress and statistics</li>
+                        <li>Process premium subscriptions and features</li>
+                        <li>Generate analytics and performance metrics</li>
+                        <li>Provide customer support</li>
+                        <li>Prevent fraud and abuse</li>
+                    </ul>
+
+                    <h2>3. Data Storage and Security</h2>
+                    <div class="legal-highlight">
+                        <strong>Security Measures:</strong> We implement industry-standard security measures including encryption, secure databases, and regular security audits.
+                    </div>
+                    <ul>
+                        <li><strong>Database Security:</strong> MongoDB Atlas with encryption at rest and in transit</li>
+                        <li><strong>Access Control:</strong> Limited access to authorized personnel only</li>
+                        <li><strong>Data Retention:</strong> User data retained for service provision, deleted upon account deletion</li>
+                        <li><strong>Backup Systems:</strong> Secure, encrypted backups for data protection</li>
+                    </ul>
+
+                    <h2>4. Data Sharing and Third Parties</h2>
+                    <p>We <strong>DO NOT</strong> sell your personal data. We may share data in these limited circumstances:</p>
+                    <ul>
+                        <li><strong>Service Providers:</strong> Trusted partners who help operate our services</li>
+                        <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
+                        <li><strong>Consent:</strong> When you explicitly provide consent</li>
+                    </ul>
+
+                    <h2>5. Your Rights and Choices</h2>
+                    <ul>
+                        <li><strong>Data Access:</strong> Request a copy of your data</li>
+                        <li><strong>Data Correction:</strong> Request correction of inaccurate data</li>
+                        <li><strong>Data Deletion:</strong> Request deletion of your account and data</li>
+                        <li><strong>Data Portability:</strong> Request your data in a machine-readable format</li>
+                        <li><strong>Opt-out:</strong> Unsubscribe from marketing communications</li>
+                    </ul>
+
+                    <h2>6. Cookies and Tracking</h2>
+                    <p>Our dashboard uses minimal cookies for:</p>
+                    <ul>
+                        <li>Theme preferences (dark/light mode)</li>
+                        <li>Session management</li>
+                        <li>Analytics (anonymous usage data)</li>
+                    </ul>
+
+                    <h2>7. Children's Privacy</h2>
+                    <p>Our service is not intended for children under 13. We do not knowingly collect personal information from children under 13. If we become aware of such collection, we will delete the information immediately.</p>
+
+                    <h2>8. International Data Transfers</h2>
+                    <p>Your data may be processed in countries other than your own. We ensure appropriate safeguards are in place for international transfers.</p>
+
+                    <div class="contact-info">
+                        <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+                        <p>For privacy-related questions or requests:</p>
+                        <p><strong>Email:</strong> privacy@flippyflip.bot</p>
+                        <p><strong>Discord:</strong> Join our support server</p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/hellx-wrld/flippy.github.io/issues" style="color: var(--accent-blue);">Create an issue</a></p>
+                    </div>
+
+                    <div class="last-updated">
+                        <p><strong>Last Updated:</strong> July 8, 2025</p>
+                        <p>We may update this Privacy Policy periodically. Users will be notified of significant changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="terms" class="section" style="display:none;">
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon"><i class="fas fa-file-contract"></i></div>
+                    <div class="feature-title">Terms of Service</div>
+                </div>
+                <div class="legal-content">
+                    <div class="legal-highlight">
+                        <strong>Agreement:</strong> By using Flippy Flip Bot, you agree to these Terms of Service. Please read them carefully.
+                    </div>
+
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By accessing or using Flippy Flip Bot ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the Service.</p>
+
+                    <h2>2. Description of Service</h2>
+                    <p>Flippy Flip is a Discord bot that provides:</p>
+                    <ul>
+                        <li>Virtual economy and gaming features</li>
+                        <li>Profile customization and themes</li>
+                        <li>Premium subscription services</li>
+                        <li>Leaderboards and statistics</li>
+                        <li>Web dashboard and analytics</li>
+                    </ul>
+
+                    <h2>3. User Accounts and Responsibilities</h2>
+                    <h3>Account Requirements</h3>
+                    <ul>
+                        <li>Must have a valid Discord account</li>
+                        <li>Must be 13 years or older (or legal age in your jurisdiction)</li>
+                        <li>Must provide accurate information</li>
+                        <li>Must maintain account security</li>
+                    </ul>
+
+                    <h3>User Conduct</h3>
+                    <p>You agree NOT to:</p>
+                    <ul>
+                        <li>Use the service for illegal activities</li>
+                        <li>Attempt to exploit, hack, or abuse the bot</li>
+                        <li>Share or sell your account</li>
+                        <li>Use automated scripts or bots to interact with our service</li>
+                        <li>Spam commands or abuse the system</li>
+                        <li>Harass other users or staff</li>
+                    </ul>
+
+                    <h2>4. Premium Services and Payments</h2>
+                    <div class="legal-highlight">
+                        <strong>Premium Features:</strong> Enhanced multipliers, exclusive items, custom backgrounds, and priority support.
+                    </div>
+                    <ul>
+                        <li><strong>Billing:</strong> Premium subscriptions are billed monthly or annually</li>
+                        <li><strong>Refunds:</strong> Generally non-refundable except where required by law</li>
+                        <li><strong>Cancellation:</strong> Can be cancelled anytime; access continues until end of billing period</li>
+                        <li><strong>Price Changes:</strong> We reserve the right to change prices with 30 days notice</li>
+                    </ul>
+
+                    <h2>5. Virtual Currency and Items</h2>
+                    <ul>
+                        <li>Virtual coins and items have no real-world value</li>
+                        <li>Cannot be exchanged for real money</li>
+                        <li>We reserve the right to adjust balances for system integrity</li>
+                        <li>Lost items due to bugs will be restored when possible</li>
+                    </ul>
+
+                    <h2>6. Intellectual Property</h2>
+                    <p>Flippy Flip Bot and all related content are owned by hellx-wrld and protected by copyright laws. You may not:</p>
+                    <ul>
+                        <li>Copy, modify, or distribute our code without permission</li>
+                        <li>Use our branding or logos without authorization</li>
+                        <li>Reverse engineer the bot's functionality</li>
+                    </ul>
+
+                    <h2>7. Service Availability</h2>
+                    <ul>
+                        <li><strong>Uptime:</strong> We strive for 99.9% uptime but cannot guarantee uninterrupted service</li>
+                        <li><strong>Maintenance:</strong> Scheduled maintenance will be announced in advance</li>
+                        <li><strong>Updates:</strong> Features may change or be discontinued with notice</li>
+                    </ul>
+
+                    <h2>8. Limitation of Liability</h2>
+                    <div class="legal-highlight">
+                        <strong>Important:</strong> Our liability is limited to the maximum extent permitted by law.
+                    </div>
+                    <p>We are not liable for:</p>
+                    <ul>
+                        <li>Loss of virtual currency or items</li>
+                        <li>Service interruptions or downtime</li>
+                        <li>Data loss (beyond reasonable backup efforts)</li>
+                        <li>Indirect, incidental, or consequential damages</li>
+                    </ul>
+
+                    <h2>9. Account Termination</h2>
+                    <p>We may suspend or terminate accounts for:</p>
+                    <ul>
+                        <li>Violation of these Terms</li>
+                        <li>Fraudulent activity</li>
+                        <li>Abuse or harassment</li>
+                        <li>Legal requirements</li>
+                    </ul>
+
+                    <h2>10. Privacy and Data Protection</h2>
+                    <p>Your privacy is important to us. Please review our <a href="#" onclick="showSection('privacy')" style="color: var(--accent-blue);">Privacy Policy</a> to understand how we collect, use, and protect your information.</p>
+
+                    <h2>11. Changes to Terms</h2>
+                    <p>We reserve the right to modify these Terms at any time. Significant changes will be announced through:</p>
+                    <ul>
+                        <li>Bot announcements</li>
+                        <li>Discord server notifications</li>
+                        <li>Website updates</li>
+                        <li>Email notifications (for premium users)</li>
+                    </ul>
+
+                    <h2>12. Governing Law</h2>
+                    <p>These Terms are governed by and construed in accordance with applicable laws. Any disputes will be resolved through binding arbitration where permitted by law.</p>
+
+                    <div class="contact-info">
+                        <h3><i class="fas fa-gavel"></i> Legal Contact</h3>
+                        <p>For legal questions or concerns:</p>
+                        <p><strong>Email:</strong> legal@flippyflip.bot</p>
+                        <p><strong>Discord:</strong> Join our support server</p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/hellx-wrld/flippy.github.io/issues" style="color: var(--accent-blue);">Report issues</a></p>
+                    </div>
+
+                    <div class="last-updated">
+                        <p><strong>Last Updated:</strong> July 8, 2025</p>
+                        <p><strong>Effective Date:</strong> July 8, 2025</p>
+                        <p>Continued use of the service after changes constitutes acceptance of new terms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
             <p>© 2025 Flippy Flip Bot by hellx-wrld - Premium Discord Economy Experience</p>
             <p>Built with ❤️ using Node.js, MongoDB, and Discord.js | <a href="https://github.com/hellx-wrld/flippy.github.io" style="color: var(--accent-blue);">View on GitHub</a></p>
+            <p style="margin-top: 1rem;">
+                <a href="#" onclick="showSection('privacy')" style="color: var(--accent-blue); margin-right: 1rem;">Privacy Policy</a> |
+                <a href="#" onclick="showSection('terms')" style="color: var(--accent-blue); margin-left: 1rem;">Terms of Service</a>
+            </p>
         </div>
     </div>
 

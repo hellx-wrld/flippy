@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Flippy Flip Bot</title>
+    <meta name="description" content="Terms of Service for Flippy Flip Discord Bot - User agreement and guidelines">
+    <meta name="author" content="hellx-wrld">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #0a0a0a;
+            --secondary-dark: #1a1a1a;
+            --tertiary-dark: #2a2a2a;
+            --accent-blue: #00b4d8;
+            --accent-purple: #7209b7;
+            --accent-gold: #f77f00;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --text-muted: #808080;
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --shadow-dark: rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 50%, var(--tertiary-dark) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .back-button {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 0.8rem 1.5rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .content-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px var(--shadow-dark);
+        }
+
+        h2 {
+            color: var(--accent-blue);
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--glass-border);
+        }
+
+        h3 {
+            color: var(--accent-purple);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .highlight {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .contact-info {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-purple);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .content-card {
+                padding: 2rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-file-contract"></i> Terms of Service</h1>
+            <p>Flippy Flip Bot - User Agreement & Guidelines</p>
+        </div>
+
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Dashboard
+        </a>
+
+        <div class="content-card">
+            <div class="highlight">
+                <strong>Agreement:</strong> By using Flippy Flip Bot, you agree to these Terms of Service. Please read them carefully.
+            </div>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using Flippy Flip Bot ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the Service.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>Flippy Flip is a Discord bot that provides:</p>
+            <ul>
+                <li>Virtual economy and gaming features</li>
+                <li>Profile customization and themes</li>
+                <li>Premium subscription services</li>
+                <li>Leaderboards and statistics</li>
+                <li>Web dashboard and analytics</li>
+            </ul>
+
+            <h2>3. User Accounts and Responsibilities</h2>
+            <h3>Account Requirements</h3>
+            <ul>
+                <li>Must have a valid Discord account</li>
+                <li>Must be 13 years or older (or legal age in your jurisdiction)</li>
+                <li>Must provide accurate information</li>
+                <li>Must maintain account security</li>
+            </ul>
+
+            <h3>User Conduct</h3>
+            <p>You agree NOT to:</p>
+            <ul>
+                <li>Use the service for illegal activities</li>
+                <li>Attempt to exploit, hack, or abuse the bot</li>
+                <li>Share or sell your account</li>
+                <li>Use automated scripts or bots to interact with our service</li>
+                <li>Spam commands or abuse the system</li>
+                <li>Harass other users or staff</li>
+            </ul>
+
+            <h2>4. Premium Services and Payments</h2>
+            <div class="highlight">
+                <strong>Premium Features:</strong> Enhanced multipliers, exclusive items, custom backgrounds, and priority support.
+            </div>
+            <ul>
+                <li><strong>Billing:</strong> Premium subscriptions are billed monthly or annually</li>
+                <li><strong>Refunds:</strong> Generally non-refundable except where required by law</li>
+                <li><strong>Cancellation:</strong> Can be cancelled anytime; access continues until end of billing period</li>
+                <li><strong>Price Changes:</strong> We reserve the right to change prices with 30 days notice</li>
+            </ul>
+
+            <h2>5. Virtual Currency and Items</h2>
+            <ul>
+                <li>Virtual coins and items have no real-world value</li>
+                <li>Cannot be exchanged for real money</li>
+                <li>We reserve the right to adjust balances for system integrity</li>
+                <li>Lost items due to bugs will be restored when possible</li>
+            </ul>
+
+            <h2>6. Intellectual Property</h2>
+            <p>Flippy Flip Bot and all related content are owned by hellx-wrld and protected by copyright laws. You may not:</p>
+            <ul>
+                <li>Copy, modify, or distribute our code without permission</li>
+                <li>Use our branding or logos without authorization</li>
+                <li>Reverse engineer the bot's functionality</li>
+            </ul>
+
+            <h2>7. Service Availability</h2>
+            <ul>
+                <li><strong>Uptime:</strong> We strive for 99.9% uptime but cannot guarantee uninterrupted service</li>
+                <li><strong>Maintenance:</strong> Scheduled maintenance will be announced in advance</li>
+                <li><strong>Updates:</strong> Features may change or be discontinued with notice</li>
+            </ul>
+
+            <h2>8. Limitation of Liability</h2>
+            <div class="highlight">
+                <strong>Important:</strong> Our liability is limited to the maximum extent permitted by law.
+            </div>
+            <p>We are not liable for:</p>
+            <ul>
+                <li>Loss of virtual currency or items</li>
+                <li>Service interruptions or downtime</li>
+                <li>Data loss (beyond reasonable backup efforts)</li>
+                <li>Indirect, incidental, or consequential damages</li>
+            </ul>
+
+            <h2>9. Account Termination</h2>
+            <p>We may suspend or terminate accounts for:</p>
+            <ul>
+                <li>Violation of these Terms</li>
+                <li>Fraudulent activity</li>
+                <li>Abuse or harassment</li>
+                <li>Legal requirements</li>
+            </ul>
+
+            <h2>10. Privacy and Data Protection</h2>
+            <p>Your privacy is important to us. Please review our <a href="privacy.html">Privacy Policy</a> to understand how we collect, use, and protect your information.</p>
+
+            <h2>11. Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms at any time. Significant changes will be announced through:</p>
+            <ul>
+                <li>Bot announcements</li>
+                <li>Discord server notifications</li>
+                <li>Website updates</li>
+                <li>Email notifications (for premium users)</li>
+            </ul>
+
+            <h2>12. Governing Law</h2>
+            <p>These Terms are governed by and construed in accordance with applicable laws. Any disputes will be resolved through binding arbitration where permitted by law.</p>
+
+            <div class="contact-info">
+                <h3><i class="fas fa-gavel"></i> Legal Contact</h3>
+                <p>For legal questions or concerns:</p>
+                <p><strong>Email:</strong> legal@flippyflip.bot</p>
+                <p><strong>Discord:</strong> Join our support server</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/hellx-wrld/flippy.github.io/issues">Report issues</a></p>
+            </div>
+
+            <div class="last-updated">
+                <p><strong>Last Updated:</strong> July 8, 2025</p>
+                <p><strong>Effective Date:</strong> July 8, 2025</p>
+                <p>Continued use of the service after changes constitutes acceptance of new terms.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
