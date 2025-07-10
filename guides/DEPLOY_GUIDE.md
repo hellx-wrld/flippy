@@ -1,6 +1,6 @@
 # 🚀 PANDUAN DEPLOY KE GITHUB PAGES
 
-## 📁 Repository: https://github.com/elingap666/flippy.github.io
+## 📁 Repository: https://github.com/hellx-wrld/flippy.git
 
 ### 🎯 **LANGKAH-LANGKAH DEPLOY**
 

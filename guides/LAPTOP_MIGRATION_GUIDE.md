@@ -5,7 +5,7 @@
 ### **📥 BACKUP YANG PERLU DISIMPAN**
 
 #### **1. Source Code (Yang Paling Penting)**
-- ✅ **GitHub Repository**: https://github.com/elingap666/flippy.github.io
+- ✅ **GitHub Repository**: https://github.com/hellx-wrld/flippy.git
 - ✅ **Full Project Folder**: `c:\Users\ADMIN\Desktop\Flippy Flip\`
 - ✅ **Database Connection String**: File `.env` atau `config.js`
 - ✅ **Bot Token**: Discord bot token dari Developer Portal
@@ -38,7 +38,7 @@
 ```bash
 1. Buka GitHub Desktop
 2. File → Clone repository
-3. URL: https://github.com/elingap666/flippy.github.io
+3. URL: https://github.com/hellx-wrld/flippy.git
 4. Local path: C:\Users\[USER]\Projects\flippy-flip\
 ```
 

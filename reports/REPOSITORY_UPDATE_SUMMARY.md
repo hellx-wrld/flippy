@@ -18,7 +18,7 @@
 
 | Type | Old URL | New URL |
 |------|---------|---------|
-| **Repository** | `https://github.com/elingap666/flippy.github.io.git` | `https://github.com/hellx-wrld/flippy.github.io.git` |
+| **Repository** | `https://github.com/elingap666/flippy.github.io.git` | `https://github.com/hellx-wrld/flippy.git` |
 | **Dashboard** | `https://elingap666.github.io/flippy.github.io` | `https://hellx-wrld.github.io/flippy.github.io` |
 | **GitHub Profile** | `https://github.com/elingap666` | `https://github.com/hellx-wrld` |
 
@@ -34,7 +34,7 @@
 
 ### 2. **Update Git Remote**
 ```bash
-git remote set-url origin https://github.com/hellx-wrld/flippy.github.io.git
+git remote set-url origin https://github.com/hellx-wrld/flippy.git
 git add .
 git commit -m "Update repository URLs to hellx-wrld"
 git push origin main
@@ -73,7 +73,7 @@ These files might contain additional references that need updating:
 
 After completing these steps:
 - ✅ Dashboard available at: `https://hellx-wrld.github.io/flippy.github.io`
-- ✅ Repository accessible at: `https://github.com/hellx-wrld/flippy.github.io`
+- ✅ Repository accessible at: `https://github.com/hellx-wrld/flippy.git`
 - ✅ All bot commands show new URLs
 - ✅ GitHub Pages automatically deploys updates
 

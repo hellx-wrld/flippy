@@ -24,7 +24,7 @@ BOT_OWNER_ID=your_discord_id
 - **Action**: Copy connection string, save cluster info
 
 ### **4. GitHub Repository (PALING PENTING)**
-- **URL**: https://github.com/elingap666/flippy.github.io
+- **URL**: https://github.com/hellx-wrld/flippy.git
 - **Status**: ✅ Sudah aman di cloud
 - **Action**: Pastikan semua changes sudah di-push
 

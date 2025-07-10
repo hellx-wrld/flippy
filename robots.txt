@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elingap666.github.io/flippy.github.io/sitemap.xml
+Sitemap: https://hellx-wrld.github.io/flippy/sitemap.xml
