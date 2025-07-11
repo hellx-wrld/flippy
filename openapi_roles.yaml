@@ -1,0 +1,17 @@
+  /admin/roles:
+    get:
+      summary: List semua role user (admin only)
+      responses:
+        '200': { description: OK }
+  /admin/roles/{userId}:
+    put:
+      summary: Update role user (admin only)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                roles: { type: array, items: { type: string } }
+      responses:
+        '200': { description: OK }

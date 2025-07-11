@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  title: Flippy Flip Admin API
+  version: 1.0.0
+  description: |
+    API untuk manajemen bot ekonomi Flippy Flip (admin panel).
+    Semua endpoint membutuhkan header `x-admin-token`.
+servers:
+  - url: http://localhost:3000
+paths:
+  /admin/users:
+    get:
+      summary: List user
+      parameters:
+        - in: query
+          name: page
+          schema: { type: integer }
+        - in: query
+          name: limit
+          schema: { type: integer }
+        - in: query
+          name: filter
+          schema: { type: string }
+      responses:
+        '200': { description: OK }
+  /admin/support-tickets:
+    get:
+      summary: List support ticket
+      responses:
+        '200': { description: OK }
+    post:
+      summary: Buat tiket
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId: { type: string }
+                subject: { type: string }
+                message: { type: string }
+      responses:
+        '200': { description: OK }
+  /admin/api-keys:
+    get:
+      summary: List API key
+      responses:
+        '200': { description: OK }
+    post:
+      summary: Buat API key
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                description: { type: string }
+                permissions: { type: array, items: { type: string } }
+      responses:
+        '200': { description: OK }
+  /admin/broadcast:
+    post:
+      summary: Broadcast pesan
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type: { type: string, enum: [channel, user] }
+                target: { type: string }
+                message: { type: string }
+                format: { type: string, enum: [text, embed] }
+      responses:
+        '200': { description: OK }
+  /admin/analytics:
+    get:
+      summary: Statistik growth
+      responses:
+        '200': { description: OK }
+  /admin/analytics/advanced:
+    get:
+      summary: Statistik lanjutan
+      responses:
+        '200': { description: OK }
