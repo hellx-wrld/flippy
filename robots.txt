@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://hellx-wrld.github.io/flippy/sitemap.xml
